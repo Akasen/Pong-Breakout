@@ -29,9 +29,9 @@ class Ball(object):
         if(self.x + (2 * self.radius) > 600):
             self.speed_x = -5
         elif(self.x <= 0):
-            self.speed_x = -5
-        if(self.y + (2 * self.radius)> 480):
+            self.speed_x = 5
+        if(self.y + (2 * self.radius) > 480):
             self.speed_y = -5
         elif(self.y <= 0):
-            self.speed_x
+            self.speed_x = 5
 
