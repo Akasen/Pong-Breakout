@@ -3,16 +3,16 @@ __author__ = 'Joshua'
 import pygame
 
 class Paddle(object):
-    def __init__(self, height, width, X, display):
+    def __init__(self, height, width, x, display):
         self.height = height
         self.width = width
         self.display = display
 
-        self.X = X
-        self.Y = 350
+        self.x = x
+        self.y = 350
 
-    def paddle_update(self, X):
-        self.X = X
+    def update(self):
+        self.x = pygame.mouse.get_pos()[0]
 
-    def draw_paddle(self):
-        pygame.draw.rect(self.display, (255,255,255), (self.X,self.Y,self.height,self.width))
+    def draw(self):
+        pygame.draw.rect(self.display, (255,255,255), (self.x,self.y,self.height,self.width))

@@ -10,5 +10,8 @@ class Block(object):
         self.x = 20
         self.y = 25
 
-    def draw_block(self):
-        pygame.draw.rect(self.display, (255,255,255), (self.x,self.y, 65,20))
+    def update(self):
+        pass
+
+    def draw(self):
+        pygame.draw.rect(self.display, (255,255,255), (self.x,self.y, 20))
